@@ -31,25 +31,25 @@ class AssertionsTestsExample: XCTestCase {
 
     func testAssertTrueCondition() {
         expectAssert("Zero division") {
-            divideAssert(1, by: 1)
+            let _ = divideAssert(1, by: 1)
         }
     }
 
     func testAssertNoMessage() {
         expectAssert() {
-            divideAssert(1, by: 0)
+            let _ = divideAssert(1, by: 0)
         }
     }
 
     func testAssertErrorIncorrectMessage() {
         expectAssert("Invalid") {
-            divideAssert(1, by: 0)
+            let _ = divideAssert(1, by: 0)
         }
     }
 
     func testAssertCorrectMessage() {
         expectAssert("Zero division") {
-            divideAssert(1, by: 0)
+            let _ = divideAssert(1, by: 0)
         }
     }
 
@@ -57,25 +57,25 @@ class AssertionsTestsExample: XCTestCase {
 
     func testAssertionFailureNotCalled() {
         expectAssertionFailure("Zero division") {
-            divideAssertionFailure(1, by: 1)
+            let _ = divideAssertionFailure(1, by: 1)
         }
     }
 
     func testAssertionFailureNoMessage() {
         expectAssertionFailure() {
-            divideAssertionFailure(1, by: 0)
+            let _ = divideAssertionFailure(1, by: 0)
         }
     }
 
     func testAssertionFailureErrorIncorrectMessage() {
         expectAssertionFailure("Invalid") {
-            divideAssertionFailure(1, by: 0)
+            let _ = divideAssertionFailure(1, by: 0)
         }
     }
 
     func testAssertionFailureCorrectMessage() {
         expectAssertionFailure("Zero division") {
-            divideAssertionFailure(1, by: 0)
+            let _ = divideAssertionFailure(1, by: 0)
         }
     }
 
@@ -89,25 +89,25 @@ class AssertionsTestsExample: XCTestCase {
 
     func testPreconditionTrueCondition() {
         expectPrecondition("Zero division") {
-            dividePrecondition(1, by: 1)
+            let _ = dividePrecondition(1, by: 1)
         }
     }
 
     func testPreconditionNoMessage() {
         expectPrecondition() {
-            dividePrecondition(1, by: 0)
+            let _ = dividePrecondition(1, by: 0)
         }
     }
 
     func testPreconditionErrorIncorrectMessage() {
         expectPrecondition("Invalid") {
-            dividePrecondition(1, by: 0)
+            let _ = dividePrecondition(1, by: 0)
         }
     }
 
     func testPreconditionCorrectMessage() {
         expectPrecondition("Zero division") {
-            dividePrecondition(1, by: 0)
+            let _ = dividePrecondition(1, by: 0)
         }
     }
 
@@ -116,25 +116,25 @@ class AssertionsTestsExample: XCTestCase {
 
     func testPreconditionFailureNotCalled() {
         expectPreconditionFailure("Zero division") {
-            dividePreconditionFailure(1, by: 1)
+            let _ = dividePreconditionFailure(1, by: 1)
         }
     }
 
     func testPreconditionFailureNoMessage() {
         expectPreconditionFailure() {
-            dividePreconditionFailure(1, by: 0)
+            let _ = dividePreconditionFailure(1, by: 0)
         }
     }
 
     func testPreconditionFailureErrorIncorrectMessage() {
         expectPreconditionFailure("Invalid") {
-            dividePreconditionFailure(1, by: 0)
+            let _ = dividePreconditionFailure(1, by: 0)
         }
     }
 
     func testPreconditionFailureCorrectMessage() {
         expectPreconditionFailure("Zero division") {
-            dividePreconditionFailure(1, by: 0)
+            let _ = dividePreconditionFailure(1, by: 0)
         }
     }
 
@@ -142,25 +142,25 @@ class AssertionsTestsExample: XCTestCase {
 
     func testFatalErrorNotCalled() {
         expectFatalError("Zero division!") {
-            divideFatalError(1, by: 1)
+            let _ = divideFatalError(1, by: 1)
         }
     }
 
     func testFatalErrorNoMessage() {
         expectFatalError() {
-            divideFatalError(1, by: 0)
+            let _ = divideFatalError(1, by: 0)
         }
     }
 
     func testFatalErrorIncorrectMessage() {
         expectFatalError("Invalid") {
-            divideFatalError(1, by: 0)
+            let _ = divideFatalError(1, by: 0)
         }
     }
 
     func testFatalCorrectMessage() {
         expectFatalError("Zero division") {
-            divideFatalError(1, by: 0)
+            let _ = divideFatalError(1, by: 0)
         }
     }
 }

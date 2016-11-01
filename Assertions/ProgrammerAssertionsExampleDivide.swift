@@ -17,14 +17,14 @@ import UIKit
 /// This file is just an example of how to use the functions. Normally as you would do previously.
 /// For a complete project example see <https://github.com/mohamede1945/AssertionsTestingExample>
 
-func divideAssert(x: Float, by y: Float) -> Float {
+func divideAssert(_ x: Float, by y: Float) -> Float {
 
     assert(y != 0, "Zero division")
 
     return x / y
 }
 
-func divideAssertionFailure(x: Float, by y: Float) -> Float {
+func divideAssertionFailure(_ x: Float, by y: Float) -> Float {
 
     guard y != 0 else {
         assertionFailure("Zero division")
@@ -35,14 +35,14 @@ func divideAssertionFailure(x: Float, by y: Float) -> Float {
 }
 
 
-func dividePrecondition(x: Float, by y: Float) -> Float {
+func dividePrecondition(_ x: Float, by y: Float) -> Float {
 
     precondition(y != 0, "Zero division")
 
     return x / y
 }
 
-func dividePreconditionFailure(x: Float, by y: Float) -> Float {
+func dividePreconditionFailure(_ x: Float, by y: Float) -> Float {
 
     guard y != 0 else {
         preconditionFailure("Zero division")
@@ -51,7 +51,7 @@ func dividePreconditionFailure(x: Float, by y: Float) -> Float {
     return x / y
 }
 
-func divideFatalError(x: Float, by y: Float) -> Float {
+func divideFatalError(_ x: Float, by y: Float) -> Float {
 
     guard y != 0 else {
         fatalError("Zero division")
